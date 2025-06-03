@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+void fatorial(int fat) {
+	if (fat < 0) {
+		cout << " Nao existe fat negativo. \n";
+		return;
+	}
+	int result = 1;
+	int i;
+	for (i = 2; i <= fat; i++) { // o for começa em 2 porque o fatorial de 0 e 1 é 1, então não precisamos multiplicar por eles
+		result *= i;	// aqui eu multiplico o resultado pelo i, que vai de 2 até o número digitado pelo usuário
+	}
+	cout << result << "\n"; // aqui eu imprimo o resultado do fatorial
+}
+	
+	int main() {
+		int num;
+		cout << " Digite um numero para ver o fatorial ";
+			cin >> num;
+
+	
+			cout << " O fatorial de " << num << " eh: ";
+			fatorial(num); // o Num é o int fat, eu invoco o fatorial com o num que é o número digitado pelo usuário
+
+	return 0;
+}
