@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+void Fibonnaci(int mat) {
+	
+	if (mat == 0) {
+	cout << "0";
+		return;
+	}
+		if (mat == 1) {
+		cout << "1";
+			return;
+		}
+
+	int e=0;
+	int resul = 2;
+	for (e = 0; e <= mat;e++) {
+		
+		resul += e; // Atribui o valor de e a resul
+  } // fim do for
+	
+
+	cout << resul;
+	return;
+} // fim do void
+
+
+int main() {
+
+	int num;
+	cout << " Digite um numero: ";
+	cin >> num;
+	cout << "O Fibonacci de " << num << " eh: ";
+	Fibonnaci(num);
+	
+	
+
+
+	return 0;
+}
