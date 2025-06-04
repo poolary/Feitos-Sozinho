@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+
+void Fibonnaci(int mat) {
+	if (mat < 0) {
+		cout << "Numero invalido! Digite um numero positivo." << "\n";
+		return;
+	} 
+	if (mat == 0) {
+		cout << "0" << "\n";
+		return;
+	}
+	if (mat == 1) {
+		cout << "1" << "\n";
+		return;
+
+	}
+	for (int i = 0, j = 1, mat2 = mat - 1, k = 0; k < mat2; k++) {
+		int next = i + j;
+		i = j;
+		j = next;
+		
+
+		
+		
+		if (mat == 1) cout << i << " ";
+		if (mat == 2) cout << j << " ";
+		if (mat >= 3) cout << next << " ";
+		if (next == mat) {
+	
+		}
+	}
+	
+	
+	
+	}
+		
+
+
+
+	int main() {
+
+		int num;
+		cout << "Digite um numero inteiro positivo: ";
+		
+		cin >> num;
+		cout << "A sequencia de Fibonacci ate o numero: 0 ";
+		Fibonnaci(num);
+
+
+		return 0;
+	}
